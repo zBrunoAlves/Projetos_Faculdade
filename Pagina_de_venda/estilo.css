@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: #fff9ea;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #ffe092;
+}
+
+.logo {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.buscador {
+    flex-basis: 50%;
+    text-align: center;
+    padding-left: 20px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#buscadorInput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 90%;
+    outline: none;
+}
+
+input::placeholder {
+    color: #ffcb45;
+    font-size: 15px;
+}
+
+input {
+    color: #ffcb45;
+}
+
+.buscador label {
+    height: 20px;
+}
+
+.menu {
+    flex-basis: 30%;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.menu a {
+    padding: 40px;
+}
+
+.segundoMenu {
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: #fff9ea;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.segundoMenu a {
+    text-decoration: none;
+    color: #ffcb45;
+    padding: 20px;
+    font-size: 18px;
+}
+
+header {
+    padding-top: 180px;
+}
+
+
+.footer {
+    background-color: #fff9ea;
+    height: 200px;
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.cabecalho{
+
+margin-left: 100px;
+
+}
+
+.cabecalho h1{
+    padding-bottom: 10px;
+}
+
+.filtro{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 200px;
+}
+
+.filtro a{
+    text-decoration: none;
+}
+
+#maisvendidos{
+    border: 1px solid black;
+}
+
+.filtro h3{
+    padding-bottom: 15px;
+}
+
+.maisvendidos p{
+    border: 1px solid grey;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.categorias h3{
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.categorias ul li, .filtroborda ul li{
+    list-style: none;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.categorias a{
+    color:  black;
+}
+
+.filtroborda h3{
+    padding-top: 15px;
+}
