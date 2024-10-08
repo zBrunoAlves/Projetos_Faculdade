@@ -1,0 +1,71 @@
+header {
+    padding-top: 180px;
+}
+
+.cabecalho{
+
+margin-left: 100px;
+
+}
+
+.cabecalho h1{
+    padding-bottom: 10px;
+}
+
+.filtro{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 200px;
+}
+
+.filtro a{
+    text-decoration: none;
+}
+
+#maisvendidos{
+    border: 1px solid black;
+}
+
+.filtro h3{
+    padding-bottom: 15px;
+}
+
+.maisvendidos p{
+    border: 1px solid grey;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.categorias h3{
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.categorias ul li, .filtroborda ul li{
+    list-style: none;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.categorias a{
+    color:  black;
+}
+
+.filtroborda h3{
+    padding-top: 15px;
+}
+
+.todosfiltros{
+    float: left;
+}
+
+.todosfiltros{
+    padding-right: 150px;
+}
+
+.container{
+    padding-top: 50px;
+    padding-right: 200px;    
+}
