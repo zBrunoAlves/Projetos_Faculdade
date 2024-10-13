@@ -58,11 +58,11 @@ input {
 }
 
 .segundoMenu {
-    padding: 20px;
-    margin-top: 100px;
+    padding-bottom: 15px;
+    margin-top: 93px;
     display: flex;
     flex-direction: row;
-    height: 50px;
+    height: 30px;
     background-color: #fff9ea;
     width: 100%;
     position: fixed;
