@@ -2,64 +2,90 @@ header {
     padding-top: 140px;
 }
 
-.cabecalho{
-
-margin-left: 100px;
-
+.cabecalho, .filtro {
+    margin-left: 100px;
 }
 
-.filtro{
+.filtro {
     margin-top: 20px;
-    margin-left: 100px;
     width: 200px;
 }
 
-.filtro a{
+.filtro a, .categorias a {
     text-decoration: none;
+    color: black;
 }
 
-#maisvendidos{
+#maisvendidos, .maisvendidos p {
     border: 1px solid black;
 }
 
-.filtro h3{
-    padding-bottom: 15px;
-}
-
-.maisvendidos p{
-    border: 1px solid grey;
+.maisvendidos p {
+    border-color: grey;
     height: 30px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 10px;
 }
 
-.categorias h3{
-    padding-top: 25px;
+.filtro h3, .categorias h3, .filtroborda h3 {
     padding-bottom: 15px;
 }
 
-.categorias ul li, .filtroborda ul li{
+.categorias h3, .filtroborda h3 {
+    padding-top: 15px;
+}
+
+.categorias ul li, .filtroborda ul li {
     list-style: none;
     color: black;
     padding-bottom: 10px;
 }
 
-.categorias a{
-    color:  black;
-}
-
-.filtroborda h3{
-    padding-top: 15px;
-}
-
-.todosfiltros{
+.todosfiltros {
     padding-right: 150px;
     float: left;
+    display: flex;
 }
 
-.catalogo{
-    box-shadow: 0px 0px 1px 1px black;
-    margin-right: 50px;
-    float: right;
+.catalogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; 
+    padding: 20px;
+}
+
+
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+}
+
+.catalogo img {
+    width: 100%;
+    height: auto;
+}
+
+.catalogo-estrela{
+    padding-bottom: 20px;
+}
+
+.botao-compra {
+    background-color: #ffe092;
+    color: #000000;
+    border: none; 
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer; 
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 110px;
+}
+
+.botao-compra:hover {
+    background-color: #ffe092;
+    color: #fff;
 }
