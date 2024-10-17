@@ -50,7 +50,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px; 
     padding: 20px;
 }
 
@@ -61,15 +60,17 @@ header {
     align-items: center;
     width: 200px;
     padding: 10px;
+    margin-bottom: 50px;
+    margin-right: 80px;
 }
 
 .catalogo img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 .catalogo-estrela{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .botao-compra {
@@ -85,7 +86,15 @@ header {
     margin-right: 110px;
 }
 
+.catalogo-parcela{
+    color: #434343;
+}
+
 .botao-compra:hover {
     background-color: #ffe092;
     color: #fff;
+}
+
+.catalogo-estrela i{
+    color: #e9a209
 }

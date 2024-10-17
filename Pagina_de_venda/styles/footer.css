@@ -5,4 +5,45 @@
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 125px;
+}
+
+.contatos, .social {
+    display: flex;
+    flex-direction: column;
+}
+
+.contatos a, .social a {
+    text-decoration: none;
+    color: black;
+    display: flex; 
+    margin-bottom: 10px;
+}
+
+.social i, .contatos i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.contatos p, .social p {
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.social{
+    margin-left: 200px;
+}
+
+.contatos{
+    margin-left: 150px;
 }
