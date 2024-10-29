@@ -7,7 +7,6 @@ header {
     z-index: 3;
 }
 
-<<<<<<< HEAD
 #navbar {
     width: 100%;
     display: flex;
@@ -36,48 +35,11 @@ nav li {
 
 nav li a{
     display:  inline-block;
-=======
-.cabecalho, .filtro {
-    margin-left: 100px;
-}
-
-.filtro {
-    margin-top: 20px;
-    width: 200px;
-}
-
-.filtro a, .categorias a {
-    text-decoration: none;
-    color: black;
-}
-
-#maisvendidos, .maisvendidos p {
-    border: 1px solid black;
-}
-
-.maisvendidos p {
-    border-color: grey;
-    height: 30px;
-    padding: 5px 10px;
-}
-
-.filtro h3, .categorias h3, .filtroborda h3 {
-    padding-bottom: 15px;
-}
-
-.categorias h3, .filtroborda h3 {
-    padding-top: 15px;
-}
-
-.categorias ul li, .filtroborda ul li {
-    list-style: none;
->>>>>>> d7ea84f5b42c1979f5165f02f441c343b25fe4c8
     color: black;
     text-decoration: none;
     padding: 15px;
 }
 
-<<<<<<< HEAD
 nav li a:hover{
     background-color: #f8d477;
 }
@@ -97,65 +59,6 @@ nav li a:hover{
 
 .dropdown:hover .dropdown-menu{
     display: block;
-=======
-.todosfiltros {
-    padding-right: 150px;
-    float: left;
-    display: flex;
-}
-
-.catalogos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-
-.catalogo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    padding: 10px;
-    margin-bottom: 50px;
-    margin-right: 80px;
-}
-
-.catalogo img {
-    width: 80%;
-    height: auto;
-}
-
-.catalogo-estrela{
-    padding-bottom: 10px;
-}
-
-.botao-compra {
-    background-color: #ffe092;
-    color: #000000;
-    border: none; 
-    margin-top: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer; 
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-right: 110px;
-}
-
-.catalogo-parcela{
-    color: #434343;
-}
-
-.botao-compra:hover {
-    background-color: #ffe092;
-    color: #fff;
-}
-
-.catalogo-estrela i{
-    color: #e9a209
->>>>>>> d7ea84f5b42c1979f5165f02f441c343b25fe4c8
 }
 
 
