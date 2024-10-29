@@ -1,115 +1,495 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <title>Página 1</title>
-</head>
-
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/logo.png" alt="">
-        </div>
-
-        <div class="buscador">
-            <label for="buscadorInput">
-                <img src="img/lupa.png" alt="Buscar">
-            </label>
-            <input type="text" id="buscadorInput" placeholder="O que procura?">
-        </div>
-
-        <div class="menu">
-            <a href="#"><img src="img/perfil.png" alt=""></a>
-            <a href="#"><img src="img/carrinho.png" alt=""></a>
-        </div>
-    </nav>
-    <div class="segundoMenu">
-        <ul>
-            <a href="#">Home</a>
-            <a href="#">Produtos</a>
-            <a href="#">Como funciona?</a>
-            <a href="#">Envie suas fotos</a>
-            <a href="#">Perguntas frequentes</a>
-        </ul>
-    </div>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Story.</title>
+    ><title>dropdown menu</title>
+  </head>
+  <body>
     <header>
-        
-        <div class="cabecalho">
-            <h1>Quadro Polaroid</h1>
-            <p>Exponha suas memórias com estilo retrô - impressão fotográfica profissional em molduras polaroid.</p>
-        </div>
+      <nav id="navbar">
+        <!--<i class="fa-solid fa-burger" id="nav_logo"> food</i> -->
+        <img src="images/logoo.png" alt="#" id="nav_logo1" />
 
-        <div class="todosfiltros">
-            <div class="filtro">
-                <h3>Ordenar por</h3>
-                <div class="maisvendidos">
-                    <p>Mais vendidos</p>
-                </div>
-            
-                <div class="categorias">
-                    <h3>Categorias</h3>
-                    <ul>
-                        <li><a href="#">Polaroid</a></li>
-                        <li><a href="#">8x10</a></li>
-                        <li><a href="#">10x10</a></li>
-                        <li><a href="#">5x5</a></li>
-                        <li><a href="#">10x15</a></li>
-                    </ul>
-                </div>
-                <div class="filtroborda">
-                    <h3>Com Borda Branca</h3>
-                    <ul>
-                        <li><input type="checkbox" name="Sim" id="cBorda"> Sim</li>
-                        <li><input type="checkbox" name="Não" id="sBorda"> Não</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <ul id="nav_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
 
-        <div class="catalogo">
- 
-            <div class="container">
-                <div class="imagens"><img src="img/polaroid.jpeg" alt="Polaroid"></div>
-            </div>
-            <div class="imagemlegenda">
-             <h3>Polaroid (Kit com 30 Fotos)</h3>
-            </div>
-            <div class="imagempreco"><h4>R$31,50</h4></div>
-            <div class="imagemparcela">
-             2 x de R$15,75 sem juros
-            </div>
-            <div class="imagembotao">
-             <button>Comprar</button>
-            </div>
+          <li class="dropdown">
+            <a href="">Catálogo</a>
 
-            
+            <div class="dropdown-menu">
+              <a href="Calendario.html">Calendarios</a>
+              <a href="chaveiro.html">Chaveiro</a>
+              <a href="cubogiratorio.html">Cubo Giratorio</a>
+              <a href="Flordecetim.html">Girassol de cetim</a>
+              <a href="polaroid.html">Polaroids</a>
+              <a href="quadro.html">Quadro Polaroid</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#testimonials">Como funciona?</a>
+          </li>
+
+        </ul>
+
+        <button class="btn-default">Peça aqui</button>
+
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Como funciona</a>
+          </li>
+        </ul>
+
+        <button class="btn-default">Peça aqui</button>
+      </div>
     </header>
 
-    <footer class="footer">
-        <div class="contatos">
-            <ul>
-                <p>Entre em contato</p>
-                <a href="#">Telefone: 40028922</a>
-                <a href="#">Email: email@email.com</a>
-                <a href="#">Whatsaap: 11 9 123456789</a>
-            </ul>
-        </div>
-        <div class="social">
-            <ul>
-                <p>Nossas redes sociais</p>
+    <main id="content">
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">
+            Revele suas fotos
+            <span>Polaroid</span>
+          </h1>
 
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Pinterest </a>
-            </ul>
+          <p class="description">
+            Revele seus momentos mais lindo, com pessoas que estão no seu
+            coração!
+          </p>
+
+          <div id="cta_buttons">
+            <a href="#" class="btn-default"> Ver catálogo </a>
+
+            <a href="tel:+11958769066" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (11) 95876-9066
+            </a>
+          </div>
+
+          <div class="social-media-buttons">
+            <a
+              href="https://wa.me/5511958769066?text=Quero%20fazer%20um%20pedido!"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/_story.polaroid?igsh=MTgxMzViZGtnc2hmdQ=="
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/BtENd2USeqZDWsRq/?mibextid=LQQJ4d"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
         </div>
+
+        <div id="banner">
+          <img src="images/image logoo.jfif" alt="" />
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Catálogo</h2>
+        <h3 class="section-subtitle">Nossos Produtos</h3>
+
+        <div id="dishes">
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h2 class="section-title">Produtos</h2>
+            <img src="images/Quadro01.jfif" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Quadro Polaroid</h3>
+
+            <span class="dish-description">
+              Quadro personalizado com varios modelos disponiveis
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-price">
+                <a href="quadro.html" style="text-decoration: none;">
+                    <button class="btn-default">Veja mais</button>
+                </a>
+
+
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>  
+            </div>
+
+            <img src="images/Calendario.jfif" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Calendario</h3>
+
+            <span class="dish-description">
+              Transforme cada mês em uma lembrança especial com nossos
+              exclusivos calendários Polaroid!
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-price">
+                <a href="Calendario.html" style="text-decoration: none;">
+                    <button class="btn-default">Veja mais</button>
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+
+              
+            </div>
+
+            <img src="images/Polaroid.jfif" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Polaroids "Unidade"</h3>
+
+            <span class="dish-description">
+              Reviva seus melhores momentos com o charme das fotos Polaroid!
+              📸✨ Capture. Descubra a magia da fotografia analógica na nossa
+              loja!"
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-price">
+                <a href="polaroid.html" style="text-decoration: none;">
+                    <button class="btn-default">Veja mais</button>
+                </a>
+
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="images/chaveiro.jfif" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Cheveiro</h3>
+
+            <span class="dish-description">
+              Transforme suas memórias em estilo com nossos chaveiros Polaroid
+              3x4! 🗝️📸 Leve suas fotos favoritas sempre com você.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-price">
+                <a href="chaveiro.html" style="text-decoration: none;">
+                  <button class="btn-default">Veja mais</button>
+              </a>
+
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="images/CuboGiratorio.jfif" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Cubo Giratorio</h3>
+
+            <span class="dish-description">
+              Mostre suas memórias de forma única com nosso cubo giratório de 6
+              fotos! ✨📸 Gire e revele seus momentos favoritos em qualquer
+              ângulo.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-price">
+                <a href="cubogiratorio.html" style="text-decoration: none;">
+                  <button class="btn-default">Veja mais</button>
+              </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="images/FlorGirassol.jfif" class="dish-image" alt="" />
+
+            <h3 class="dish-title">Girassol de cetim</h3>
+
+            <span class="dish-description">
+              Adicione um toque de elegância e cor ao seu espaço com nosso
+              girassol de cetim! 🌻✨ Perfeito para iluminar qualquer ambiente
+              com um toque de sofisticação.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-price">
+                <a href="Flordecetim.html" style="text-decoration: none;">
+                  <button class="btn-default">Veja mais</button>
+              </a>
+
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <img src="images/processo.png" id="testimonial_chef" alt="" />
+
+        <div id="testimonials_content">
+          <h2 class="section-title">Como funciona?</h2>
+          <h3 class="section-subtitle">
+            Como funciona o processo de produção!
+          </h3>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <img src="images/numero 1.png" class="feedback-avatar" alt="" />
+
+              <div class="feedback-content">
+                <p>
+                  Passo 1
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  Entre em contato via WhatsApp e informe quais produtos têm
+                  interesse, confirmando as compras do carrinho.
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img src="images/numero 2.png" class="feedback-avatar" alt="" />
+
+              <div class="feedback-content">
+                <p>
+                  Passo 2
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  Após confirmar o pedido, o atendente entrará em contato para
+                  informar a forma de envio das fotos para produção.
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img src="images/numero 3.png" class="feedback-avatar" alt="" />
+
+              <div class="feedback-content">
+                <p>
+                  Passo 3
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  Após o envio da foto, o atendente enviará o resultado para sua
+                  aprovação.
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img src="images/numero 4.png" class="feedback-avatar" alt="" />
+
+              <div class="feedback-content">
+                <p>
+                  Passo 4
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  Após a aprovação, o atendente apresentará as opções de
+                  pagamento. Com a confirmação do pagamento, a produção do seu
+                  pedido será iniciada.
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img src="images/numero 5.png" class="feedback-avatar" alt="" />
+
+              <div class="feedback-content">
+                <p>
+                  Passo 5
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  Quando a produção for concluída, enviaremos fotos e vídeos do
+                  produto, coletaremos seu endereço e despacharemos via correio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5511958769066?text=Quero%20fazer%20um%20pedido!" target="_blank" class="no-underline">
+            <button class="btn-default">
+                Para mais informações entre em contato!
+            </button>
+        </a>
+        
+        <style>
+        .no-underline {
+            text-decoration: none; /* Remove o sublinhado do link */
+        }
+        </style>
+
+
+
+
+
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="images/wave.svg" alt="" />
+
+      <div id="footer_items">
+        <span id="copyright"> &Guilerme RIbeiro </span>
+
+        <div class="social-media-buttons">
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
-
+    <script src="javascript/script.js"></script>
+  </body>
 </html>
